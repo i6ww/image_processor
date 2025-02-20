@@ -1,0 +1,1 @@
+pyinstaller -F image_processor.py --paths E:\Pythonproject\.venv\Lib\site-packages  --add-data "E:\Pythonproject\.venv\Lib\site-packages\tkinterdnd2;tkinterdnd2" --add-data "E:\Pythonproject\.venv\Lib\site-packages\tkinterdnd2\tkdnd;tkdnd" --hidden-import=tkinterdnd2 --hidden-import=tkdnd --clean  --noconsole
