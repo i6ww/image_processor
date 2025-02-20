@@ -1,1 +1,23 @@
 pyinstaller -F image_processor.py --paths E:\Pythonproject\.venv\Lib\site-packages  --add-data "E:\Pythonproject\.venv\Lib\site-packages\tkinterdnd2;tkinterdnd2" --add-data "E:\Pythonproject\.venv\Lib\site-packages\tkinterdnd2\tkdnd;tkdnd" --hidden-import=tkinterdnd2 --hidden-import=tkdnd --clean  --noconsole
+
+
+
+
+
+
+
+
+
+
+参数说明
+-F：将所有依赖打包成一个单独的可执行文件。
+ccc.py：你的 Python 脚本。
+--paths D:\python39\lib\site-packages：指定 Python 库路径。
+--add-data "D:\python39\lib\site-packages\tkinterdnd2;tkinterdnd2"：将 tkinterdnd2 库添加到打包文件中。注意路径格式为 "源路径;目标路径"，在 Windows 上使用分号 ; 分隔。
+--add-data "D:\python39\lib\site-packages\tkdnd;tkdnd"：将 tkdnd 库添加到打包文件中。
+--hidden-import=tkinterdnd2：显式指定 tkinterdnd2 作为隐藏导入。
+--hidden-import=tkdnd：显式指定 tkdnd 作为隐藏导入。
+--clean：清除 PyInstaller 使用的临时文件和缓存。
+--noconsole：隐藏命令行窗口（GUI程序适用）
+
+
